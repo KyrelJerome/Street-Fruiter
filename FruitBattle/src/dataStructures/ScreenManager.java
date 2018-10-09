@@ -52,8 +52,8 @@ public class ScreenManager {
 		newState = state;
 		if (currentState == BATTLESTATE)
 		{
-			gameStates.remove(BATTLESTATE);
-			gameStates.add(new BattleState(this));
+			//gameStates.remove(BATTLESTATE);
+			//gameStates.add(new BattleState(this));
 		}
 		gameStates.get(currentState).init();
 		isInitialized = true;

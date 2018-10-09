@@ -60,10 +60,11 @@ public class HUD {
 			characterhealth[i] = gameMap.characters[i].health;
 
 		}
-		if(frameCounter >= 150)
+		if(frameCounter >= 100)
 		{
 			battle.isRunning = true;
 			sm.setState(sm.MENUSTATE);
+			System.out.println("Switching to main menu");
 		}
 	}
 	public void draw(Graphics2D g){

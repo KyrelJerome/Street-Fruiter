@@ -103,7 +103,7 @@ public class CharacterSelection extends GameState{
 				tempTotalCharacters --;
 			}
 		}
-		else if(hasSelected[1] && hasSelected[0] && k == KeyEvent.VK_NUM_LOCK)
+		else if(hasSelected[1] && hasSelected[0] && k == KeyEvent.VK_L)
 		{
 			startBattle();
 		}
@@ -180,7 +180,7 @@ public class CharacterSelection extends GameState{
 					}
 				}
 			}
-			else if(hasSelected[1])
+			else
 			{
 				if(k == KeyEvent.VK_ENTER)
 				{
@@ -265,7 +265,7 @@ public class CharacterSelection extends GameState{
 	public void drawPortraits(Graphics2D g) {
 		//Draw circles
 		//Set offset 
-		if(hasSelected[0] && hasSelected[1]){
+		if(hasSelected[0] && hasSelected[1]) {
 			font = sm.GameFont.deriveFont(55f);
 			g.setFont(font );
 			g.setColor(Color.RED);
@@ -273,7 +273,12 @@ public class CharacterSelection extends GameState{
 			font = sm.GameFont.deriveFont(35f);
 			g.setFont(font);
 			g.setColor(Color.BLACK);
-			g.drawString("Press Num Lock to continue...", GamePanel.WIDTH/2 - 245, 100);
+			g.drawString("Press \"L\" to begin!", GamePanel.WIDTH/2 - 245, 100);
+		}
+		else {
+			g.drawString("P1 press ENTER to ready up!", GamePanel.WIDTH/2 - 245, 150);
+			g.drawString("P2 press SPACE to ready up!", GamePanel.WIDTH/2 - 245, 100);
+
 		}
 		for(int i = 0; i < hasSelected.length; i ++)
 		{

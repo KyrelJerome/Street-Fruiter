@@ -1,16 +1,9 @@
 package Main;
-import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
-import Maps.Background;
 import dataStructures.ScreenManager;
-
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
 import java.awt.event.*;
 
 @SuppressWarnings("serial")
@@ -100,14 +93,7 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
 			start = System.nanoTime();
 			update();
 			draw();
-			frameBasedUpdate();
-			//g.setColor(dataColor);
-			//g.setFont(dataFont);
-			//g.drawString("Fps: " + fps,100,100);
-			//System.out.println("FPS: " + fps);
-			//System.out.println("FTS: " + fts);
-			//g.drawString("Fts: " + fts,100,150);
-			
+			frameBasedUpdate();	
 			drawToScreen();
 			elapsed = System.nanoTime() - start; 
 			wait = targetTime - elapsed/ 1000000;
@@ -149,6 +135,15 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
 	public void keyReleased(KeyEvent key){
 		
 		sm.keyReleased(key.getKeyCode());
+	}
+	private void outputFPS(Graphics g) {
+		g.setColor(dataColor);
+		g.setFont(dataFont);
+		g.drawString("Fps: " + fps,100,100);
+		g.drawString("Fts: " + fts,100,150);
+
+		System.out.println("FPS: " + fps);
+		System.out.println("FTS: " + fts);
 	}
 	public void frameBasedUpdate()
 	{

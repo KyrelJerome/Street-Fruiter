@@ -22,7 +22,7 @@ public class BattleState extends GameState{
 	public static final int defaultCharInputs2[] = {KeyEvent.VK_A,KeyEvent.VK_D,KeyEvent.VK_W,KeyEvent.VK_S,
 			KeyEvent.VK_G,KeyEvent.VK_H};
 	public static final int defaultCharInputs[] = {KeyEvent.VK_LEFT,KeyEvent.VK_RIGHT,KeyEvent.VK_UP,KeyEvent.VK_DOWN,
-			KeyEvent.VK_NUMPAD5,KeyEvent.VK_ENTER};
+			KeyEvent.VK_CONTROL,KeyEvent.VK_ENTER};
 	Keylogger Player1Inputs ;
 	Keylogger Player2Inputs ;
 	HUD overlay;
@@ -133,8 +133,7 @@ public class BattleState extends GameState{
 	}
 
 	public int[] getData() {
-		// TODO Auto-generated method stub
-		return null;
+		return new int[]{currentMap.characters[0].getDeaths(), currentMap.characters[1].getDeaths()};
 	}
 
 }
