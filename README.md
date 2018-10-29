@@ -1,5 +1,5 @@
 # Street-Fruiter
-This Project is written in Java using Graphics2D as a rendering tool. The game allows for two players to play as animated pears, and fight on a platform. This being my first game, created in Gr 11, suffers from many innefficiencies, yet I am very proud of the final product.
+This Project is written in Java using Graphics2D as a rendering tool. The game allows for two players to play as animated pears, and fight on a platform. This being my first game, created in Gr 11(2016), suffers from many innefficiencies, yet I am very proud of the final product.
 * 2 Player
 * Smooth fighting experience, with shooting and moving and wacky jumping.
 * Cool animations
