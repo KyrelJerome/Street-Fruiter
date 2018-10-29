@@ -1,5 +1,5 @@
 # Street-Fruiter
-This Project is written in Java using Graphics2D as a rendering tool. The game allows for two players to play as animated pears, and fight on a platform. After being noticed that rendering in Graphics2D is inherently slow, I have moved to transferring the game concept to a smoother, custom OpenGL rendering engine dubbed Project Burst.
+This Project is written in Java using Graphics2D as a rendering tool. The game allows for two players to play as animated pears, and fight on a platform. This being my first game, created in Gr 11, suffers from many innefficiencies, yet I am very proud of the final product.
 * 2 Player
 * Smooth fighting experience, with shooting and moving and wacky jumping.
 * Cool animations
@@ -14,9 +14,9 @@ This Project is written in Java using Graphics2D as a rendering tool. The game a
 ### Battle menu
 ![Screenshot of main menu](docs/FightSceneScreenShot.PNG?raw=true "Main Menu")
 Game includes an attempt at "Advanced Techniques" seen in other fighters such as:
-*Attacking and moving 
-*Jump cancelling
-*Momentum cancelling
-*Only character available is "Pear"
+* Attacking and moving 
+* Jump cancelling
+* Momentum cancelling
+* Only character available is "Pear"
 ### Options - actively hovering "Credits"
 ![Screenshot of main menu](docs/CreditsScreenShot.PNG?raw=true "Main Menu")
